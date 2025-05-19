@@ -1,1 +1,1 @@
-export { CartProyect } from './cart-proyect';
+export * from './cart-proyect';

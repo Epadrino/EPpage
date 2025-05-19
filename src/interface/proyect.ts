@@ -3,9 +3,9 @@ export interface Proyect {
 	image: string;
 	name: string;
 	description: string;
-	desarrollado: string;
-	estilos: string;
-	lenguaje: string;
+	desarrollado: string[];
+	estilos: string[];
+	language: string[];
 	href: string;
 	repositorie: string;
 }

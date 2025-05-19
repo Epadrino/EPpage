@@ -20,7 +20,7 @@ export const ToggleTheme = () => {
 		<button
 			type="button"
 			onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-			className="transition cursor-pointer  p-2 rounded-lg bg-primary text-foreground"
+			className="transition cursor-pointer  p-2 rounded-lg  hover:bg-card/50 bg-card  text-orange-300"
 		>
 			{theme === 'dark' ? <Moon /> : <Sun />}
 		</button>

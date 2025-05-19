@@ -1,4 +1,10 @@
-import { SectionAbout, SectionTecnologis, SectionProyects, SectionConfig, SectionContac } from '../components/sections';
+import {
+	SectionAbout,
+	SectionTechnologys,
+	SectionProyects,
+	SectionConfig,
+	SectionContac,
+} from '../components/sections';
 
 export default function Home() {
 	return (
@@ -9,7 +15,7 @@ export default function Home() {
 					<SectionAbout />
 				</section>
 				<section className="col-span-1">
-					<SectionTecnologis />
+					<SectionTechnologys />
 				</section>
 				<section className="col-span-1">
 					<SectionContac />

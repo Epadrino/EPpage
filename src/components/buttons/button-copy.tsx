@@ -3,27 +3,23 @@
 import { useState } from 'react';
 import { ToastCopy } from '../toasts/toast-copy';
 
-interface CopyButtonProps {
-	textToCopy: string; // El texto que quieres copiar
+interface Props {
+	textToCopy: string;
 	name?: string;
 	icon: React.ReactNode;
 }
 
-const CopyButton: React.FC<CopyButtonProps> = ({ textToCopy, name, icon }) => {
+export const ButtonCopy = ({ textToCopy, name, icon }: Props) => {
 	const [copied, setCopied] = useState(false);
 
 	const handleCopyClick = async () => {
 		try {
-			// Intenta escribir el texto al portapapeles
 			await navigator.clipboard.writeText(textToCopy);
 			setCopied(true);
-			// Restablece el estado 'copied' después de un tiempo para que el mensaje desaparezca
 			setTimeout(() => setCopied(false), 2000); // 2 segundos
 		} catch (err) {
 			console.error('Error al copiar el texto:', err);
 			alert('Hubo un error al copiar el texto. Por favor, intenta de nuevo.');
-			// En entornos de desarrollo, a veces puede fallar si no estás en HTTPS
-			// o si el usuario no ha dado permisos (aunque writeText generalmente no los pide explícitamente).
 		}
 	};
 
@@ -32,7 +28,7 @@ const CopyButton: React.FC<CopyButtonProps> = ({ textToCopy, name, icon }) => {
 			<button
 				type="button"
 				onClick={handleCopyClick}
-				className="flex gap-2 font-medium p-2 rounded-sm cursor-pointer hover:bg-primary-foreground bg-primary text-foreground w-full justify-center"
+				className="flex gap-2 font-medium p-2 rounded-sm cursor-pointer hover:bg-card/50  w-full justify-center bg-card  text-sky-300"
 			>
 				{icon}
 				{name}
@@ -42,5 +38,3 @@ const CopyButton: React.FC<CopyButtonProps> = ({ textToCopy, name, icon }) => {
 		</>
 	);
 };
-
-export default CopyButton;
