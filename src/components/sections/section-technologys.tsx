@@ -1,16 +1,17 @@
 import { Technology } from '../technology';
 
 export const SectionTechnologys = () => {
+	const colorSection = 'orange-300';
 	return (
-		<section className="flex flex-col rounded-lg p-5 gap-5 w-full border-orange-300 border-2">
-			<span className="text-2xl font-bold text-orange-300">technologyas</span>
-			<section className="flex gap-5 w-full justify-around">
-				<section className="border-orange-200/5 border rounded-lg p-5">
+		<section className={`flex flex-col rounded-lg p-5 gap-5 w-full border-${colorSection} border-2 lg:h-full`}>
+			<span className={`text-2xl font-bold text-${colorSection}`}>Tecnologías</span>
+			<section className="flex flex-col lg:flex-row gap-5 w-full justify-around">
+				<section className={`rounded-lg p-5 bg-${colorSection}/10`}>
 					<div className="pb-2">
-						<span className="text-xl font-bold text-orange-300/70">Frontend</span>
+						<span className={`text-xl font-bold text-${colorSection}/70`}>Frontend</span>
 					</div>
-					<div className="flex flex-col gap-5">
-						<section className="flex gap-10 justify-center">
+					<div className="flex flex-col lg:flex-row gap-5 ">
+						<section className="flex flex-wrap gap-5 justify-center">
 							<Technology image="html.svg" name="HTML" />
 							<Technology image="css.svg" name="CSS" />
 							<Technology image="react.svg" name="React" />
@@ -21,22 +22,23 @@ export const SectionTechnologys = () => {
 					</div>
 				</section>
 
-				<section className="border-orange-200/5 border rounded-lg p-5">
+				<section className={`rounded-lg p-5 bg-${colorSection}/10`}>
 					<div className="pb-2">
-						<span className="text-xl font-bold pb-3 text-orange-300/70">languages</span>
+						<span className={`text-xl font-bold text-${colorSection}/70`}>languages</span>
 					</div>
 
-					<div className="flex gap-10 ">
+					<div className="flex gap-10 justify-center">
 						<Technology image="javaScript.svg" name="javaScript" />
+						<Technology image="typescript.png" name="Typescript" />
 						<Technology image="c++.svg" name="C++" />
 					</div>
 				</section>
 
-				<section className="border-orange-200/5 border rounded-lg p-5">
+				<section className={`rounded-lg p-5 bg-${colorSection}/10`}>
 					<div className="pb-2">
-						<span className="text-xl font-bold pb-3 text-orange-300/70">Controles</span>
+						<span className={`text-xl font-bold text-${colorSection}/70`}>Controles</span>
 					</div>
-					<div className="flex gap-10">
+					<div className="flex gap-10 justify-center">
 						<Technology image="git.svg" name="Git" />
 						<Technology image="github.svg" name="GitHub" />
 					</div>

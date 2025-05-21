@@ -8,22 +8,24 @@ import {
 
 export default function Home() {
 	return (
-		<main className="grid w-dvw h-dvh p-20 py-5 gap-5 relative">
-			<SectionConfig />
-			<section className="grid grid-flow-col gap-5">
-				<section className="col-span-1">
-					<SectionAbout />
+		<div className="grid items-center w-screen-5 h-screen">
+			<main className="grid p-2 gap-5 relative max-w-[1800px] mx-auto ">
+				<SectionConfig />
+				<section className="grid lg:grid-flow-col gap-5">
+					<section className="lg:col-span-1">
+						<SectionAbout />
+					</section>
+					<section className="lg:col-span-1">
+						<SectionTechnologys />
+					</section>
+					<section className="lg:col-span-1">
+						<SectionContac />
+					</section>
+					<section className="lg:row-span-3 lg:row-start-1 lg:col-start-2">
+						<SectionProyects />
+					</section>
 				</section>
-				<section className="col-span-1">
-					<SectionTechnologys />
-				</section>
-				<section className="col-span-1">
-					<SectionContac />
-				</section>
-				<section className="row-span-3 row-start-1 col-start-2">
-					<SectionProyects />
-				</section>
-			</section>
-		</main>
+			</main>
+		</div>
 	);
 }

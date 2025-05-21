@@ -7,8 +7,8 @@ import Link from 'next/link';
 
 export const SectionContac = () => {
 	return (
-		<section className="flex w-full justify-around gap-5">
-			<section className="flex flex-col gap-5 w-1/2 p-5 border-2 border-green-300 rounded-lg">
+		<section className="flex flex-col lg:flex-row w-full justify-around gap-5 lg:h-full">
+			<section className="flex flex-col gap-5 lg:w-1/2 p-5 border-2 border-green-300 rounded-lg">
 				<span className="text-2xl font-bold text-green-300">@Social</span>
 				<div className="flex gap-5 w-full">
 					<Link href="https://github.com/Epadrino" target="_blank" rel="noopener noreferrer" className="w-full">
@@ -67,7 +67,7 @@ export const SectionContac = () => {
 					</Link>
 				</div>
 			</section>
-			<section className="flex flex-col gap-5 w-1/2 p-5 border-2 border-sky-300 rounded-lg">
+			<section className="flex flex-col gap-5 lg:w-1/2 p-5 border-2 border-sky-300 rounded-lg">
 				<span className="text-2xl font-bold text-sky-300">@Contactame</span>
 
 				<div className="flex gap-5">

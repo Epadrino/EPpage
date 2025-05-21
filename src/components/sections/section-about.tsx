@@ -16,13 +16,13 @@ export const SectionAbout = () => {
 	};
 
 	return (
-		<section className="flex flex-col items-center justify-center rounded-lg p-5 border-blue-300 border-2 w-full">
+		<section className="flex flex-col items-center justify-center rounded-lg p-5 border-blue-300 border-2 w-full md:h-full">
 			<span className="text-2xl font-bold text-blue-300 w-full ">Sobre mi</span>
-			<section className="flex items-center">
-				<figure className="w-1/2 flex justify-center items-center mask-b-from-10% ">
+			<section className="flex flex-col lg:flex-row items-center">
+				<figure className="lg:w-1/2 flex justify-center items-center mask-b-from-10% ">
 					<Image alt="Imagen" src="/foto-perfil.png" width={280} height={280} className="object-contain " />
 				</figure>
-				<section className="w-1/2">
+				<section className="lg:w-1/2">
 					<span>Hola soy</span>
 					<h2 className="text-2xl font-bold py-2 ">Eduardo Padrino,</h2>
 					<p className="">

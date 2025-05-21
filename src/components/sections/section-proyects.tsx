@@ -6,7 +6,7 @@ import { CartProyect } from '../cards';
 
 export const SectionProyects = () => {
 	return (
-		<section className="flex flex-col w-2xl rounded-lg p-5 h-full justify-between border-purple-300 border-2">
+		<section className="flex flex-col lg:w-2xl rounded-lg p-5 h-full justify-between border-purple-300 border-2">
 			<span className="text-2xl font-bold pb-3 text-purple-300">Proyectos</span>
 			<section className="flex flex-col gap-5 items-center justify-around h-full py-5 ">
 				{Proyects.map((item) => (
