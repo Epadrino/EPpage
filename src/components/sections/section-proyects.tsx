@@ -32,8 +32,8 @@ export const SectionProyects = () => {
 							/>
 						))}
 					</CarouselContent>
-					<CarouselPrevious />
-					<CarouselNext />
+					<CarouselPrevious className="text-purple-300 border-purple-300 hover:text-purple-300 hover:border-purple-300" />
+					<CarouselNext className="text-purple-300 border-purple-300 hover:text-purple-300 hover:border-purple-300" />
 				</Carousel>
 			</section>
 		</section>
