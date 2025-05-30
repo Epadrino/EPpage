@@ -28,7 +28,7 @@ export const ButtonCopy = ({ textToCopy, name, icon }: Props) => {
 			<button
 				type="button"
 				onClick={handleCopyClick}
-				className="flex gap-2 font-medium p-2 rounded-sm cursor-pointer bg-popover hover:bg-popover-foreground/10  w-full justify-center bg-card  text-sky-300"
+				className="flex gap-2 font-medium p-2 rounded-sm cursor-pointer bg-popover hover:bg-popover-foreground/10  w-full justify-center text-sky-300 transition delay-150 duration-300 ease-in-out"
 			>
 				{icon}
 				{name}
